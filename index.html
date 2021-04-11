@@ -6,15 +6,19 @@
 </head>
 <body>
 <h1><a href="1.html">초중딩 소통방</a></h1>
-<input type="button" value="Night" onclick="document.querySelector('body').style.backgroundColor = 'black';document.querySelector('body').style.color = 'white';">
-<input type="button" value="Day" onclick="document.querySelector('body').style.backgroundColor = 'white';document.querySelector('body').style.color = 'black';">
  <ul>
   <li><a href="index.html">초중딩 소통방</a></li>
   <li><a href="2.html">방장</a></li>
   <li><a href="3.html">부방장</a></li>
  </ul>
   <h2>초중딩 소통방</h2>
-  <strong>그냥 친목하면서<u> 수다떠는 </u>방<br>참고로 애들이 비정상이 많습니다 주의해 주세요 ㅋㅋ<br><br><br><img src="초중딩.png" width="350"><br><br>링크:<a href="https://open.kakao.com/o/gr5x6SXc"target="_blank">https://open.kakao.com/o/gr5x6SXc</a></strong><br><br><br><input type="button" value="Night" onclick="document.querySelector('body').style.backgroundColor = 'black';document.querySelector('body').style.color = 'white';">
-  <input type="button" value="Day" onclick="document.querySelector('body').style.backgroundColor = 'white';document.querySelector('body').style.color = 'black';">
+  <strong>그냥 친목하면서<u> 수다떠는 </u>방<br>참고로 애들이 비정상이 많습니다 주의해 주세요 ㅋㅋ<br><br><br><img src="초중딩.png" width="350"><br><br>링크:<a href="https://open.kakao.com/o/gr5x6SXc"target="_blank">https://open.kakao.com/o/gr5x6SXc</a></strong><br><br><br>  <input id="night_day" type="button" value="night" onclick="if(document.querySelector('#night_day').value === 'night')
+    {document.querySelector('body').style.backgroundColor = 'black';document.querySelector('body').style.color = 'white';
+    document.querySelector('#night_day').value = 'day';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day').value = 'night';
+    }
+    ">
 </body>
 </html>
